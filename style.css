@@ -1,0 +1,137 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient to right, #e0f2f1, #b2dfdb; /* Light green gradient */
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Bank Logo */
+.bank-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50; /* Green border */
+}
+
+/* Headings */
+h2 {
+    color: #2e7d32; /* Darker green */
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #b2dfdb; /* Light green border */
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #4CAF50; /* Green on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Login Button */
+.login-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+/* Error Message */
+.error-message {
+    color: #d32f2f; /* Red */
+    margin-top: 15px;
+    font-size: 0.9em;
+    height: 1em; /* To reserve space and prevent layout shifts */
+    visibility: hidden; /* Hidden by default, shown by JS */
+}
+
+.error-message.show {
+    visibility: visible;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px;
+        margin: 20px; /* Add some margin on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .input-group input {
+        padding: 10px;
+    }
+
+    .login-button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
+
+@media (max-height: 700px) {
+    body {
+        align-items: flex-start; /* Align to top if screen is short */
+        padding-top: 5vh;
+    }
+}

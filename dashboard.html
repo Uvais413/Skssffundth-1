@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content header-content-centered">
+                <div class="date-day-section date-day-centered">
+                    <span id="currentDate" class="date"></span>
+                    <span id="currentDay" class="day"></span>
+                    <span id="istTime" class="ist-time"></span>
+                </div>
+                <button id="logoutButton" class="logout-button">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </header>
+
+        <!-- Profile -->
+        <section class="student-profile wide-profile">
+            <div class="profile-photo-area">
+                <img id="studentPhoto" src="dummy-profile.png" alt="Student Photo" class="profile-photo bigl-round">
+            </div>
+            <h1 id="studentName"></h1>
+            <p class="user-id">User ID: <span id="studentUserId"></span></p>
+        </section>
+
+        <!-- Balance -->
+        <section class="balance-section">
+            <h3>
+                <i class="fas fa-wallet" style="color:#00c6fb;margin-right:8px;"></i>
+                Check Your Balance
+            </h3>
+            <button id="checkBalanceButton" class="balance-button">
+                <i class="fas fa-eye"></i> View My Account
+            </button>
+        </section>
+
+        <!-- Divider -->
+        <div style="width:90%;margin:32px auto 0 auto;height:2px;background:linear-gradient(90deg,#00c6fb,#f77062);border-radius:2px;opacity:0.13;"></div>
+
+        <!-- Services -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-cubes" style="color:#f77062;margin-right:8px;"></i>
+                    Our <span>Services</span>
+                </h2>
+                <p class="section-subtitle">
+                    <i class="fas fa-leaf" style="color:#00c6fb;margin-right:6px;"></i>
+                    Comprehensive Sharia-compliant financial solutions
+                </p>
+                <div class="services-grid">
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e0f7fa;border-radius:50%;padding:12px;">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Happy Saving</h3>
+                        <p>Enjoy stress-free saving with our happy savings plans.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#f1f8e9;border-radius:50%;padding:12px;">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3>Exam Registration</h3>
+                        <p>Register for WAFY, University, or PSC exams — no service charges!.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e3f2fd;border-radius:50%;padding:12px;">
+                            <i class="fas fa-business-time"></i>
+                        </div>
+                        <h3>Phone Recharge</h3>
+                        <p>Recharge your phone easily and instantly through our fund service..</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e0f7fa;border-radius:50%;padding:12px;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h3>Online Purchasing</h3>
+                        <p>Order anything online with support from your fund account.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#f1f8e9;border-radius:50%;padding:12px;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Fund Transfer</h3>
+                        <p>Transfer your savings to family and friends anywhere worldwide.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e3f2fd;border-radius:50%;padding:12px;">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Zakath Consultancy <span style="font-size:0.8em;color:#43cea2;">(coming soon)</span></h3>
+                        <p>Get free Zakath calculation services with expert guidance..</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e0f7fa;border-radius:50%;padding:12px;">
+                            <i class="fas fa-umbrella"></i>
+                        </div>
+                        <h3>Amana Scheme</h3>
+                        <p>A Ramadan-saving scheme promoting consistent and smart savings.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#f1f8e9;border-radius:50%;padding:12px;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Foreign Exchange</h3>
+                        <p>Exchange foreign currencies to INR quickly and securely.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e3f2fd;border-radius:50%;padding:12px;">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Banking</h3>
+                        <p>Experience secure, seamless banking right at your fingertips.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e0f7fa;border-radius:50%;padding:12px;">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3>Legal Advertisement</h3>
+                        <p>Offering trusted legal support and advertisement services.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#f1f8e9;border-radius:50%;padding:12px;">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h3>Explore Ease</h3>
+                        <p>Save monthly, travel stress-free — make your dream trip real!</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon" style="background:#e3f2fd;border-radius:50%;padding:12px;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>All Online Services</h3>
+                        <p>We provide a full range of legal online services, T&C apply.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+  <h2 class="section-title" style="margin-bottom:18px;">
+    <i class="fas fa-envelope" style="color:#00c6fb;margin-right:8px;"></i>
+    Send a Message
+  </h2>
+  <form id="messageForm" class="message-form">
+    <div class="form-group">
+      <label for="messageOption">Options</label>
+      <select id="messageOption" name="option" required>
+        <option value="">Select</option>
+        <option value="New Admission">New Admission</option>
+        <option value="Complite">Complite</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="messageName">Name</label>
+      <input type="text" id="messageName" name="name" required placeholder="Your Name">
+    </div>
+    <div class="form-group">
+      <label for="messageText">Message</label>
+      <textarea id="messageText" name="message" rows="3" required placeholder="Type your message..."></textarea>
+    </div>
+    <button type="submit" class="balance-button" style="margin-top:10px;width:auto;">
+      <i class="fas fa-paper-plane"></i> Send
+    </button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("messageForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = {
+      option: document.getElementById("messageOption").value,
+      name: document.getElementById("messageName").value,
+      message: document.getElementById("messageText").value
+    };
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzvpjvpO7bpmFyW4-YBjPlX5bxBySV2q4SWtNBxi8kJNF0Xn36D6KYg7tP1QIi_L9qu/exec"; // ← Your Google Apps Script web app URL
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert("✅ Message sent successfully!");
+        document.getElementById("messageForm").reset();
+      } else {
+        alert("❌ Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("⚠️ Error sending message.");
+    }
+  });
+</script>
+
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            Designed by Mohammed Uvais
+        </footer>
+    </div>
+    <script>
+    // IST Time display
+    function updateISTTime() {
+        const now = new Date();
+        // IST is UTC+5:30
+        const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+        const istTime = new Date(utc + (3600000*5.5));
+        const h = istTime.getHours().toString().padStart(2, '0');
+        const m = istTime.getMinutes().toString().padStart(2, '0');
+        const s = istTime.getSeconds().toString().padStart(2, '0');
+        document.getElementById('istTime').textContent = `IST: ${h}:${m}:${s}`;
+    }
+    setInterval(updateISTTime, 1000);
+    updateISTTime();
+   </script>
+    
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
