@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
             spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDW-ZwjYoSeQoNDcYGNxJ819EM7qUh9yGYr2-UqX-2aqvC4V5zQen1nULDaDYyCehfgvSZHybaou1L/pubhtml?gid=895386043&single=true'
         },
         {
-            userId: 'ap',
-            passcode: '1fss2',
-            name: 'Uvis',
-            photo: 'demo passport 2.jpg', // Make sure this image is in your project folder
-            spreadsheetLink: ''
+            userId: 'Basil Kuttoor',
+            passcode: '250191',
+            name: 'MUHAMMED BASIL A',
+            photo: 'basil.JPG', // Make sure this image is in your project folder
+            spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTUGsCfaU4vJ27cRbF1qzfTTw0y8Z3MDvmp1os7MtzqTM02ggea1CBrXp0272D-S9uEz-fnNEifYfnc/pubhtml?gid=764584542&single=true'
         },
         {
             userId: 'ap',
