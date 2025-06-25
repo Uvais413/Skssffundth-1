@@ -177,42 +177,16 @@
   </form>
 </section>
 
-<script>
-  document.getElementById("messageForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
 
-    const data = {
-      option: document.getElementById("messageOption").value,
-      name: document.getElementById("messageName").value,
-      message: document.getElementById("messageText").value
-    };
-
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzvpjvpO7bpmFyW4-YBjPlX5bxBySV2q4SWtNBxi8kJNF0Xn36D6KYg7tP1QIi_L9qu/exec"; // ← Your Google Apps Script web app URL
-
-    try {
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-      });
-
-      if (response.ok) {
-        alert("✅ Message sent successfully!");
-        document.getElementById("messageForm").reset();
-      } else {
-        alert("❌ Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("⚠️ Error sending message.");
-    }
-  });
-</script>
 
 
         <!-- Footer -->
         <footer class="dashboard-footer">
-            Designed by Mohammed Uvais
+           <span>
+    <a href="https://wa.me/917025560027?text=Hai%20Uvais%0AFrom%20Fund%202025%20%20TH-website." target="_blank" style="color: inherit; text-decoration: underline;">
+     <b> Designed by Uvais</b> 
+    </a>
+  </span>
         </footer>
     </div>
     <script>
@@ -232,5 +206,36 @@
    </script>
     
     <script src="dashboard-script.js"></script>
+    <!-- ...existing code... -->
+<script>
+  // ...existing code...
+document.getElementById("messageForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxewNzJhDI_HYOahSnP9ISWNp-FgFAnTxwpcNP7PeXJhjgmBRvePb0qgjJIYvRiwXSV/exec";
+
+  try {
+    const response = await fetch(scriptURL, {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    } else {
+      alert("❌ Failed to send message.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("⚠️ Error sending message.");
+  }
+});
+// ...existing code...
+</script>
+<!-- ...existing code... -->
 </body>
 </html>
