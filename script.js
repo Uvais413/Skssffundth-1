@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // For this example, we're hardcoding it.
     const students = [
         {
-            userId: 'ap',
-            passcode: '12',
-            name: 'Uvis',
-            photo: 'demo passport 2.jpg', // Make sure this image is in your project folder
-            spreadsheetLink: ''
+            userId: 'Uvais',
+            passcode: '123',
+            name: 'Uvais',
+            photo: 'uvais.jpg', // Make sure this image is in your project folder
+            spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDW-ZwjYoSeQoNDcYGNxJ819EM7qUh9yGYr2-UqX-2aqvC4V5zQen1nULDaDYyCehfgvSZHybaou1L/pubhtml?gid=1987261765&single=true'
         },
         {
             userId: 'sahl',
@@ -65,12 +65,69 @@ document.addEventListener('DOMContentLoaded', () => {
             spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTUGsCfaU4vJ27cRbF1qzfTTw0y8Z3MDvmp1os7MtzqTM02ggea1CBrXp0272D-S9uEz-fnNEifYfnc/pubhtml?gid=764584542&single=true'
         },
         {
+            userId: '15401',
+            passcode: '201444',
+            name: 'MUHAMMAD NIJAD E',
+            photo: 'nijad.jpg', 
+            spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDW-ZwjYoSeQoNDcYGNxJ819EM7qUh9yGYr2-UqX-2aqvC4V5zQen1nULDaDYyCehfgvSZHybaou1L/pubhtml?gid=1103885579&single=true'
+        },
+        {
+            userId: 'Shadilvm',
+            passcode: 'Shadilvm',
+            name: 'MUHAMMED SHADIL VM',
+            photo: 'shadil.jpg', 
+            spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDW-ZwjYoSeQoNDcYGNxJ819EM7qUh9yGYr2-UqX-2aqvC4V5zQen1nULDaDYyCehfgvSZHybaou1L/pubhtml?gid=2070671926&single=true'
+        },
+        {
             userId: 'ap',
             passcode: '1sgd2',
-            name: 'Uvis',
-            photo: 'demo passport 2.jpg', // Make sure this image is in your project folder
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
             spreadsheetLink: ''
         },
+        {
+            userId: 'ap',
+            passcode: '1sgd2',
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
+            spreadsheetLink: ''
+        },
+        {
+            userId: 'ap',
+            passcode: '1sgd2',
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
+            spreadsheetLink: ''
+        },
+        {
+            userId: 'ap',
+            passcode: '1sgd2',
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
+            spreadsheetLink: ''
+        },
+        {
+            userId: 'ap',
+            passcode: '1sgd2',
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
+            spreadsheetLink: ''
+        },
+        {
+            userId: 'ap',
+            passcode: '1sgd2',
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
+            spreadsheetLink: ''
+        },
+        {
+            userId: 'ap',
+            passcode: '1sgd2',
+            name: 'Uvais',
+            photo: 'demo passport 2.jpg', 
+            spreadsheetLink: ''
+        },
+
        
         
     ];
