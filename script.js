@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             userId: '15470',
             passcode: '654321',
             name: 'SHAHUL HAMEED KS',
-            photo: 'demo passport 2.jpg', 
+            photo: 'shahul.jpg', 
             spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDW-ZwjYoSeQoNDcYGNxJ819EM7qUh9yGYr2-UqX-2aqvC4V5zQen1nULDaDYyCehfgvSZHybaou1L/pubhtml?gid=2040006145&single=true'
         },
         {
