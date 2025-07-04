@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             spreadsheetLink: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDW-ZwjYoSeQoNDcYGNxJ819EM7qUh9yGYr2-UqX-2aqvC4V5zQen1nULDaDYyCehfgvSZHybaou1L/pubhtml?gid=2062748021&single=true'
         },
         {
-            userId: 'rizwan chalad ',
+            userId: 'rizwan chalad',
             passcode: '158581',
             name: 'MUHAMMED RIZWAN MK',
             photo: 'demo passport 2.jpg', 
